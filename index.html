@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Guidance Portal UI</title>
+    <meta name="description"
+        content="A modern dashboard-style user interface that helps students explore career paths and required skills.">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">
+            <i class="fa-solid fa-compass"></i> CareerDash
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#careers">Careers</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#roadmap">Roadmap</a></li>
+            <li><a href="#resources">Resources</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="menu-btn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+
+    <!-- Main Dashboard Container -->
+    <div class="dashboard-layout">
+        <!-- Sidebar (Optional, for dashboard feel) -->
+        <aside class="sidebar">
+            <div class="user-profile">
+                <img src="PROFILE.jpg" alt="User Avatar">
+                <h4>Saloni Lade</h4>
+                <p>Computer Science Major</p>
+            </div>
+            <ul class="side-menu">
+                <li class="active"><a href="#home"><i class="fa-solid fa-house"></i> Dashboard</a></li>
+                <li><a href="#careers"><i class="fa-solid fa-briefcase"></i> Paths</a></li>
+                <li><a href="#roadmap"><i class="fa-solid fa-map-location-dot"></i> Roadmaps</a></li>
+                <li><a href="#skills"><i class="fa-solid fa-chart-pie"></i> Analytics</a></li>
+                <li><a href="#contact"><i class="fa-solid fa-envelope"></i> Messages</a></li>
+                <li><a href="#"><i class="fa-solid fa-gear"></i> Settings</a></li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+
+            <!-- Home / Hero Section -->
+            <section id="home" class="hero-section">
+                <div class="hero-content">
+                    <h1>Shape Your <span class="highlight">Future</span> Career Path</h1>
+                    <p>Explore high-demand careers, track your skills, and follow structured roadmaps tailored to your
+                        goals.</p>
+                    <div class="hero-buttons">
+                        <a href="#careers" class="btn btn-primary">Explore Careers <i
+                                class="fa-solid fa-arrow-right"></i></a>
+                        <a href="#roadmap" class="btn btn-secondary">View Roadmaps</a>
+                    </div>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-card">
+                        <h3>12+</h3>
+                        <p>Career Paths</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>50+</h3>
+                        <p>Skills to Learn</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>100+</h3>
+                        <p>Resources</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Career Recommendation Section -->
+            <section id="recommendations" class="dashboard-section">
+                <div class="section-header">
+                    <h2><i class="fa-solid fa-wand-magic-sparkles"></i> AI Recommendations</h2>
+                    <p>Based on your profile and interests</p>
+                </div>
+                <div class="recommendations-grid">
+                    <div class="rec-card creative">
+                        <div class="rec-icon"><i class="fa-solid fa-pen-nib"></i></div>
+                        <div class="rec-info">
+                            <span class="rec-tag">Creative Profile</span>
+                            <h3>UI/UX Design</h3>
+                            <p>Perfect for visual thinkers.</p>
+                        </div>
+                    </div>
+                    <div class="rec-card analytical">
+                        <div class="rec-icon"><i class="fa-solid fa-chart-line"></i></div>
+                        <div class="rec-info">
+                            <span class="rec-tag">Analytical Profile</span>
+                            <h3>Data Science</h3>
+                            <p>Ideal for problem solvers.</p>
+                        </div>
+                    </div>
+                    <div class="rec-card logical">
+                        <div class="rec-icon"><i class="fa-solid fa-code"></i></div>
+                        <div class="rec-info">
+                            <span class="rec-tag">Logical Profile</span>
+                            <h3>Web Development</h3>
+                            <p>Great for structural builders.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Career Paths Section -->
+            <section id="careers" class="dashboard-section">
+                <div class="section-header">
+                    <h2><i class="fa-solid fa-briefcase"></i> Explore Career Paths</h2>
+                    <p>Discover roles that match your skills</p>
+                </div>
+                <div class="careers-grid">
+                    <!-- Web Developer -->
+                    <div class="career-card">
+                        <div class="card-image"
+                            style="background-image: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80');">
+                            <div class="card-overlay">
+                                <span class="badge">High Demand</span>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h3>Web Developer</h3>
+                            <p>Build and maintain responsive websites and web applications.</p>
+                            <div class="salary"><i class="fa-solid fa-sack-dollar"></i> $70k - $120k / yr</div>
+                            <div class="skills-tags">
+                                <span>HTML/CSS</span>
+                                <span>JavaScript</span>
+                                <span>React</span>
+                            </div>
+                            <a href="#" class="btn btn-outline">Explore Path</a>
+                        </div>
+                    </div>
+
+                    <!-- Data Scientist -->
+                    <div class="career-card">
+                        <div class="card-image"
+                            style="background-image: url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80');">
+                        </div>
+                        <div class="card-content">
+                            <h3>Data Scientist</h3>
+                            <p>Analyze complex data to help businesses make better decisions.</p>
+                            <div class="salary"><i class="fa-solid fa-sack-dollar"></i> $90k - $150k / yr</div>
+                            <div class="skills-tags">
+                                <span>Python</span>
+                                <span>Machine Learning</span>
+                                <span>SQL</span>
+                            </div>
+                            <a href="#" class="btn btn-outline">Explore Path</a>
+                        </div>
+                    </div>
+
+                    <!-- UI/UX Designer -->
+                    <div class="career-card">
+                        <div class="card-image"
+                            style="background-image: url('https://images.unsplash.com/photo-1561070791-2526d30994b5?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80');">
+                        </div>
+                        <div class="card-content">
+                            <h3>UI/UX Designer</h3>
+                            <p>Design intuitive, aesthetically pleasing digital experiences.</p>
+                            <div class="salary"><i class="fa-solid fa-sack-dollar"></i> $65k - $110k / yr</div>
+                            <div class="skills-tags">
+                                <span>Figma</span>
+                                <span>Prototyping</span>
+                                <span>Wireframing</span>
+                            </div>
+                            <a href="#" class="btn btn-outline">Explore Path</a>
+                        </div>
+                    </div>
+
+                    <!-- Cyber Security -->
+                    <div class="career-card">
+                        <div class="card-image"
+                            style="background-image: url('https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80');">
+                            <div class="card-overlay">
+                                <span class="badge alert">Trending</span>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h3>Cyber Security Analyst</h3>
+                            <p>Protect networks and systems from digital attacks and threats.</p>
+                            <div class="salary"><i class="fa-solid fa-sack-dollar"></i> $85k - $140k / yr</div>
+                            <div class="skills-tags">
+                                <span>Networking</span>
+                                <span>Ethical Hacking</span>
+                                <span>Linux</span>
+                            </div>
+                            <a href="#" class="btn btn-outline">Explore Path</a>
+                        </div>
+                    </div>
+
+                    <!-- Cloud Engineer -->
+                    <div class="career-card">
+                        <div class="card-image"
+                            style="background-image: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80');">
+                            <div class="card-overlay">
+                                <span class="badge alert">Trending</span>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h3>Cloud Engineer</h3>
+                            <p>Design, implement, and manage cloud-based infrastructure.</p>
+                            <div class="salary"><i class="fa-solid fa-sack-dollar"></i> $95k - $160k / yr</div>
+                            <div class="skills-tags">
+                                <span>AWS</span>
+                                <span>Docker</span>
+                                <span>Kubernetes</span>
+                            </div>
+                            <a href="#" class="btn btn-outline">Explore Path</a>
+                        </div>
+                    </div>
+
+                    <!-- AI Engineer -->
+                    <div class="career-card">
+                        <div class="card-image"
+                            style="background-image: url('https://images.unsplash.com/photo-1620712943543-bcc4688e7485?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80');">
+                            <div class="card-overlay">
+                                <span class="badge alert">Trending</span>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h3>AI Engineer</h3>
+                            <p>Develop intelligent algorithms and machine learning models.</p>
+                            <div class="salary"><i class="fa-solid fa-sack-dollar"></i> $110k - $180k / yr</div>
+                            <div class="skills-tags">
+                                <span>Deep Learning</span>
+                                <span>NLP</span>
+                                <span>TensorFlow</span>
+                            </div>
+                            <a href="#" class="btn btn-outline">Explore Path</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Two Column Section: Skills & Motivation -->
+            <div class="dashboard-row">
+                <!-- Skills Dashboard -->
+                <section id="skills" class="dashboard-section col-60">
+                    <div class="section-header">
+                        <h2><i class="fa-solid fa-chart-pie"></i> Your Skills Profile</h2>
+                        <p>Current proficiency based on assessments</p>
+                    </div>
+                    <div class="skills-container card-panel">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>HTML/CSS</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 90%; --target-width: 90%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>JavaScript</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 80%; --target-width: 80%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Python</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 75%; --target-width: 75%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Communication</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress accent-1" style="width: 85%; --target-width: 85%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Problem Solving</span>
+                                <span>88%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress accent-2" style="width: 88%; --target-width: 88%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Motivation -->
+                <section id="motivation" class="dashboard-section col-40">
+                    <div class="section-header">
+                        <h2><i class="fa-solid fa-bolt"></i> Daily Insights</h2>
+                        <p>Stay motivated and grow</p>
+                    </div>
+                    <div class="motivation-cards">
+                        <div class="quote-card">
+                            <i class="fa-solid fa-quote-left"></i>
+                            <p>"The future depends on what you do today."</p>
+                            <span class="author">- Mahatma Gandhi</span>
+                        </div>
+                        <div class="tip-card">
+                            <div class="tip-icon"><i class="fa-solid fa-lightbulb"></i></div>
+                            <div class="tip-text">
+                                <h4>Pro Tip</h4>
+                                <p>Spend 20% of your time learning, and 80% building projects.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Career Roadmap Section -->
+            <section id="roadmap" class="dashboard-section">
+                <div class="section-header">
+                    <h2><i class="fa-solid fa-map"></i> Learning Roadmap</h2>
+                    <p>Your step-by-step guide to success</p>
+                </div>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot completed"><i class="fa-solid fa-check"></i></div>
+                        <div class="timeline-content card-panel">
+                            <h3>1. Learn Fundamentals</h3>
+                            <p>Understand the core concepts, syntax, and basic principles of your chosen field.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot active"><i class="fa-solid fa-laptop-code"></i></div>
+                        <div class="timeline-content card-panel active-panel">
+                            <h3>2. Practice Skills</h3>
+                            <p>Solve coding challenges, complete small exercises, and solidify your knowledge.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"><i class="fa-solid fa-hammer"></i></div>
+                        <div class="timeline-content card-panel">
+                            <h3>3. Build Projects</h3>
+                            <p>Create real-world applications to showcase in your portfolio.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"><i class="fa-solid fa-file-lines"></i></div>
+                        <div class="timeline-content card-panel">
+                            <h3>4. Create Resume</h3>
+                            <p>Highlight your skills, projects, and educational background effectively.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"><i class="fa-solid fa-paper-plane"></i></div>
+                        <div class="timeline-content card-panel">
+                            <h3>5. Apply for Jobs</h3>
+                            <p>Start sending applications, networking, and preparing for interviews.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Learning Resources Section -->
+            <section id="resources" class="dashboard-section">
+                <div class="section-header">
+                    <h2><i class="fa-solid fa-book-open"></i> Learning Resources</h2>
+                    <p>Curated materials to accelerate your growth</p>
+                </div>
+                <div class="resources-grid">
+                    <div class="resource-card">
+                        <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                            alt="Web Dev Resource">
+                        <div class="resource-info">
+                            <h3>Web Development Guide</h3>
+                            <p>Comprehensive tutorials from HTML basics to advanced React.</p>
+                            <a href="#" class="btn-text">Start Learning <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="resource-card">
+                        <img src="https://images.unsplash.com/photo-1509228468518-180dd4864904?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                            alt="Data Science Resource">
+                        <div class="resource-info">
+                            <h3>Data Science Bootcamp</h3>
+                            <p>Master Python, Pandas, and Scikit-Learn through practice.</p>
+                            <a href="#" class="btn-text">Start Learning <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="resource-card">
+                        <img src="https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                            alt="UI/UX Resource">
+                        <div class="resource-info">
+                            <h3>UI/UX Design Principles</h3>
+                            <p>Learn color theory, typography, and wireframing in Figma.</p>
+                            <a href="#" class="btn-text">Start Learning <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="resource-card">
+                        <img src="https://images.unsplash.com/photo-1573164713988-8665fc963095?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                            alt="Interview Prep Resource">
+                        <div class="resource-info">
+                            <h3>Interview Preparation</h3>
+                            <p>Mock interviews, common questions, and negotiation strategies.</p>
+                            <a href="#" class="btn-text">Start Learning <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact" class="dashboard-section">
+                <div class="section-header text-center">
+                    <h2><i class="fa-solid fa-envelope"></i> Get In Touch</h2>
+                    <p>Have questions? Reach out to our career counselors.</p>
+                </div>
+                <div class="contact-container card-panel">
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" placeholder="Enter your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" placeholder="Enter your email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" rows="5" placeholder="How can we help you?" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Send Message <i
+                                class="fa-solid fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </section>
+
+            <!-- Footer -->
+            <footer class="footer">
+                <p>&copy; 2026 CareerDash Portal. Built for students.</p>
+            </footer>
+
+        </main>
+    </div>
+</body>
+
+</html>
